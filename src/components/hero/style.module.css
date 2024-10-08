@@ -1,0 +1,38 @@
+.list_block {
+    padding: 12px 18px;
+    width: 310px;
+    background-color: #edf2f6;
+}
+
+.data_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.data_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.data_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #070c11;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.big_block {
+    background-image: url(../../assets/slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 970px;
+    height: 524px;
+}

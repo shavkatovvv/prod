@@ -1,0 +1,49 @@
+.catalog {
+    background-color: #0e1821;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.prod {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 310px;
+    background-color: #243c53;
+}
+
+.prod_text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 62px;
+}
+
+.prod_text::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../../assets/menu.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    left: 6%;
+    top: 25%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.link_list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
