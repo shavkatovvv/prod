@@ -1,16 +1,17 @@
 import React from "react";
 import { Mainlayout } from "./layout/main-layout";
-import { Catalog } from "./components/catalog/catalog";
-import { Hero } from "./components/hero/hero";
-import { Products } from "./components/products/products";
-
+import { Route, Routes } from "react-router-dom";
+import { Prod } from "./home/prod";
+import { Rome } from "./rome/home";
 function App() {
     return (
         <>
-            <Mainlayout />
-            <Catalog />
-            <Hero />
-            <Products />
+            <Routes>
+                <Route path="/" element={<Mainlayout />}>
+                    <Route index element={<Rome />} />
+                    <Route path="catalog/:id" element={<Prod />} />
+                </Route>
+            </Routes>
         </>
     );
 }
